@@ -1,0 +1,105 @@
+
+body{
+    background-color: rgb(145, 160, 175);
+    margin: 0%;
+    padding: 0%;
+}
+
+header,#synopsis,footer, #author, #reviews, #gallery {
+    text-align: center;
+}
+
+
+header {
+    background-color: rgb(18, 32, 68);
+    grid-area: h;
+
+}
+
+.nav {
+    background-color: rgb(218, 96, 52)
+;
+    grid-area: n;
+}
+
+body {
+    background-color: rgb(112, 150, 185);
+    margin: 1%;
+}
+
+#synopsis {
+    background-color: rgb(22, 28, 40);
+    grid-area: s;
+}
+
+#author {
+    background-color: rgb(18, 32, 68);
+    grid-area: a;
+}
+
+#reviews {
+    grid-area: r;
+}
+
+#relatedWorks {
+    grid-area: rw;
+}
+
+#gallery {
+    background-color: rgb(22, 28, 40);
+    grid-area: g;
+}
+
+footer {
+    background-color: rgb(218, 96, 52);
+    grid-area: f;
+}
+
+img {
+    width: 40%;
+    height: auto;
+}
+
+#cover {
+    width: 50%;
+    height: auto;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    grid-template-areas: 
+    "n h h h"
+    "rw h h h"
+    "s s s s"
+    "r r r r"
+    "g g g g"
+    "f f f f";
+    width: 100vw;
+    height: auto;
+}
+
+@media screen and (max-width: 1920px) {
+
+    header {
+        background-color: rgb(29, 31, 28);
+        grid-area: h;
+    
+    }
+
+  .gridContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h h h"
+    "n s s"
+    "rw r r"
+    "a a a"
+    "g g g"
+    "f f f";
+    width: 100vw;
+    height: auto;
+  }
+  
+
+}
