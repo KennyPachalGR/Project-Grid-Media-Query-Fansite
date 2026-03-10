@@ -17,6 +17,7 @@ header {
 .nav {
     background-color: rgb(135, 180, 205);
     grid-area: n;
+    color: black;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
 #synopsis {
     background-color: rgb(135, 180, 205);
     grid-area: s;
+    color: black;
 }
 
 #author {
@@ -52,6 +54,11 @@ body {
 footer {
     background-color: rgb(95, 105, 115);
     grid-area: f;
+}
+
+.reviewForm {
+    background-color: rgb(135, 180, 205);
+    color: black;
 }
 
 img {

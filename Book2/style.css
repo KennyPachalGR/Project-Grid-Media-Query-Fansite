@@ -43,6 +43,7 @@ body {
 
 #relatedWorks {
     grid-area: rw;
+    background-color: rgb(22, 28, 40);
 }
 
 #gallery {
@@ -63,6 +64,10 @@ img {
 #cover {
     width: 50%;
     height: auto;
+}
+
+.reviewForm {
+    background-color: rgb(218, 96, 52);
 }
 
 .gridContainer {
